@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.menu-lateral {
+  width: 80px;
+  height: 100%;
+  background-color: #202020;
+  padding: 40px 0 40px 1%;
+  box-shadow: 3px 0 0 #ff0077;
+
+  position: fixed;
+  /* top: 0;
+  left: 0; */
+
+  overflow: hidden;
+
+  transition: all 0.4s;
+}
+
+.menu-lateral.expandir {
+  width: 300px;
+}
+
+.btn-expandir {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.btn-expandir > i {
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+ul {
+  height: 100%;
+  list-style-type: none;
+}
+
+ul .item-menu {
+  transition: all 0.2s;
+  margin-top: 0.5rem;
+}
+
+ul .item-menu:hover {
+  background: #ff0077;
+}
+
+ul .item-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 4%;
+  display: flex;
+  gap: 20px;
+  line-height: 40px;
+}
+
+ul .item-menu a .txt-link {
+  margin-left: 70px;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.menu-lateral.expandir .txt-link {
+  margin-left: 40px;
+  opacity: 1;
+}
+
+ul .item-menu a .icon > i {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.selecionado {
+  background-color: #ff0077;
+}
